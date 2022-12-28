@@ -27,11 +27,3 @@ class OrganisationDomain(BaseModel):
     address: AddressDomain | None = None
     socials: list[SocialDomain] | None = None
 
-
-def to_organisation_domain(entity):
-    entity.id = OrganisationEntity.id
-    entity.name = OrganisationEntity.name
-    entity.email = OrganisationEntity.email
-    entity.about = OrganisationEntity.about
-    entity.phone = OrganisationEntity.phone
-    entity.profile_link = OrganisationEntity.profile_link
