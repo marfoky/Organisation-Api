@@ -5,8 +5,6 @@ from sqlalchemy_utils import URLType
 from mixins import *
 from ..db_setup import *
 from ..domains import OrganisationDomain, AddressDomain, SocialDomain
-import db.domains.OrganisationDomain
-
 
 
 class OrganisationEntity(model, Timestamp):

@@ -180,5 +180,5 @@ def update_organisation(organisation_id: int, dto: OrganisationDto, db: Session)
             social_array.append(social_array)
         db.commit()
 
-    domain = to_domain(entity, address_entity, list[social_entity])
+    domain = to_domain(entity, address_entity, social_array)
     return domain
