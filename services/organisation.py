@@ -7,7 +7,6 @@ from repositories import address as address_repository
 from repositories import organisation as organisation_repository
 from repositories import socials as socials_repository
 
-
 def fetch_all_organisations(db: Session) -> list[OrganisationDomain]:
     organisation_entities = organisation_repository.fetch_all_organisations(db)
     domains = []
