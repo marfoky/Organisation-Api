@@ -6,7 +6,7 @@ from mixins import *
 from ..db_setup import *
 from ..domains import OrganisationDomain, AddressDomain, SocialDomain
 
-
+# somenew here
 class OrganisationEntity(model, Timestamp):
     __tablename__ = "organisations"
 
